@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=377, initial-scale=1.0">
+  <title>Payment</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      background: #f0f0f0;
+      font-family: 'Montserrat';
+    }
+
+    .container {
+      position: relative;
+      width: 377px;
+      height: 720px;
+      background: #FFFFFF;
+      border-radius: 20px;
+      overflow: hidden;
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 20px;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      width: 100%;
+      padding: 10px 0;
+    }
+
+    .arrow-icon {
+      position: absolute;
+      left: 20px;
+      width: 23px;
+      height: 19px;
+      cursor: pointer;
+      transition: background 0.2s ease, transform 0.1s ease;
+      border-radius: 50%;
+      padding: 6px;
+    }
+
+    .arrow-icon:hover {
+      background: #E6E6E6;
+      transform: scale(1.05);
+    }
+
+    h1 {
+      font-weight: 600;
+      font-size: 18px;
+      color: #210F33;
+      margin: 0;
+    }
+
+    .payment-box {
+      width: 320px;
+      background: #FAFAFA;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+      margin-top: 25px;
+      display: flex;
+  flex-direction: column;
+  /* рівномірний простір */
+  height: 500px;
+    }
+
+    .applepay {
+  width: 100%;
+  height: 50px;
+  background: #000000;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-family: 'Montserrat';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px; /* відстань між лого і текстом */
+  transition: background-color 0.25s ease, transform 0.1s ease;
+}
+
+.applepay img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1); /* робить лого білим */
+}
+
+.applepay:hover {
+  background-color: #1a1a1a;
+  transform: scale(1.02);
+}
+
+    .divider {
+      text-align: center;
+      font-size: 12px;
+      color: #9C9C9F;
+      margin: 10px 0;
+    }
+
+    .form-field {
+  width: 100%;
+  height: 45px;
+  border: 2px solid #E6E6E6;
+  border-radius: 8px;
+  padding: 5px 10px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #210F33;
+  background: white;
+  outline: none;
+  margin-bottom: 12px;
+  font-family: 'Montserrat';
+  box-sizing: border-box;
+  appearance: none; /* прибирає системну стрілку select */
+}
+
+select.form-field {
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%23210F33' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+  padding-right: 35px;
+}
+
+    input[type="email"] {
+      width: 100%;
+      height: 45px;
+      border: 2px solid #E6E6E6;
+      border-radius: 8px;
+      padding: 5px 10px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #210F33;
+      outline: none;
+      margin-bottom: 12px;
+      font-family: 'Montserrat';
+    }
+
+    select {
+      width: 100%;
+      height: 45px;
+      border: 2px solid #E6E6E6;
+      border-radius: 8px;
+      padding: 5px 10px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #210F33;
+      background: white;
+      outline: none;
+      margin-bottom: 12px;
+      font-family: 'Montserrat';
+      box-sizing: border-box; 
+    }
+
+    .add-card {
+      font-size: 12px;
+      color: #00DE81;
+      text-align: left;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+
+    .pay-btn {
+      width: 100%;
+      height: 55px;
+      background: #00DE81;
+      color: #FFFFFF;
+      font-size: 16px;
+      font-weight: 700;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.25s ease, transform 0.1s ease;
+      font-family: 'Montserrat';
+    }
+
+    .pay-btn:hover {
+      background-color: #00c874;
+      transform: scale(1.02);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <!-- Стрілка назад -->
+      <img src="images/Arrow/ArrowLeft2-192x192.png" alt="back" class="arrow-icon" onclick="window.location.href='Сайт. Поремчук.html'">
+      <h1>Payment</h1>
+    </header>
+
+    <div class="payment-box">
+      <button class="applepay">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple logo">
+      <span>Pay</span>
+      </button>
+
+      <div class="divider">or pay with card</div>
+
+      <input type="email" class="form-field" placeholder="Email">
+
+      <select class="form-field">
+        <option>💳 Mastercard **** 8577 (10/29)</option>
+        <option>💳 Visa **** 1350 (04/27)</option>
+      </select>
+
+      <div class="add-card">+ Add another card</div>
+
+      <button class="pay-btn">Pay $2649.60</button>
+    </div>
+  </div>
+</body>
+</html>
