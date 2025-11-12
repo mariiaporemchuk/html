@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="uk">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shopping Cart</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <style>
+
     body {
       margin: 0;
       background: #f0f0f0;
@@ -90,7 +82,6 @@
       align-items: center;
       gap: 6px;
       overflow-y: auto;
-      padding: 0 20px 120px;
     }
 
     .item {
@@ -172,14 +163,13 @@
       bottom: 0px;
       left: 0;
       width: 100%;
-      height: auto;;
+      height: 215px;
       background: #210F33;
       border-radius: 28px 28px 0 0;
       display: flex;
       flex-direction: column;
       gap: 15px;
-      padding: 20px 20px 30px 20px;
-      box-sizing: border-box;
+      padding-top: 20px;
     }
 
     .voucher-total {
@@ -277,93 +267,4 @@
       width: 75px;
       height: 20px;
     }
-  </style>
-</head>
-<body>
-
-  <div class="container">
-    <header class="header">
-      <img src="images/Arrow/ArrowLeft2-192x192.png" alt="back" class="arrow-icon">
-      <h1>Shopping Cart</h1>
-      <div class="cart-icon">
-        <img src="images/eCommerce/ShoppingBag-192x192.png" alt="cart" class="bag-icon">
-        <span class="badge">5</span>
-      </div>
-    </header>
-
-    <main class="items">
-      <div class="item">
-        <img src="https://www.globalspec.com/ImageRepository/LearnMore/20125/videoCamerae9aa991c73ce4859841f87f18e31c52f.png" alt="Video Camera" class="item-image">
-        <div class="item-info">
-          <h2>Video Camera</h2>
-          <p>Code #247890</p>
-          <div class="price">$ 849.90</div>
-        </div>
-        <div class="item-controls">
-          <button class="minus"><i class="fa-solid fa-minus"></i></button>
-          <span>1</span>
-          <button class="plus"><i class="fa-solid fa-plus"></i></button>
-        </div>
-      </div>
-
-      <div class="item">
-        <img src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/13070145/sony-original-walkman-tps-l2.0.1406747932.jpg?quality=90&strip=all&crop=10.78125,0,78.4375,100" alt="Walkman" class="item-image">
-        <div class="item-info">
-          <h2>Walkman</h2>
-          <p>Code #367381</p>
-          <div class="price">$ 249.90</div>
-        </div>
-        <div class="item-controls">
-          <button class="minus"><i class="fa-solid fa-minus"></i></button>
-<span>1</span>
-<button class="plus"><i class="fa-solid fa-plus"></i></button>
-        </div>
-      </div>
-
-      <div class="item">
-        <img src="https://www.musichallaudio.com/cdn/shop/products/Music_Hall_Classic_0000_Music_Hall_Classic_Turntable_Walnut_Left.png?v=1677272582" alt="Turntable" class="item-image">
-        <div class="item-info">
-          <h2>Turntable</h2>
-          <p>Code #589001</p>
-          <div class="price">$ 1449.90</div>
-        </div>
-        <div class="item-controls">
-          <button class="minus"><i class="fa-solid fa-minus"></i></button>
-<span>1</span>
-<button class="plus"><i class="fa-solid fa-plus"></i></button>
-        </div>
-      </div>
-
-      <div class="item">
-        <img src="https://s19687.pcdn.co/wp-content/uploads/vp4_01.webp" alt="Pager" class="item-image">
-        <div class="item-info">
-          <h2>Pager</h2>
-          <p>Code #567190</p>
-          <div class="price">$ 99.90</div>
-        </div>
-        <div class="item-controls">
-          <button class="minus"><i class="fa-solid fa-minus"></i></button>
-<span>1</span>
-<button class="plus"><i class="fa-solid fa-plus"></i></button>
-        </div>
-      </div>
-    </main>
-
-    <footer class="bottom">
-      <div class="voucher-total">
-  <input type="text" class="voucher" placeholder="VOUCHER CODE">
-  <div class="total">TOTAL : $ 2649.60</div>
-</div>
-
-      <button class="checkout" onclick="window.location.href='checkout.html'">Checkout</button>
-
-      <button class="paypal">
-        <span>Checkout with</span>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/2560px-PayPal.svg.png" alt="PayPal">
-      </button>
-    </footer>
-  </div>
   
-
-</body>
-</html>

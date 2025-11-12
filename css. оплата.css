@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="uk">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=377, initial-scale=1.0">
-  <title>Payment</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
-  <style>
-    body {
+body {
       margin: 0;
       display: flex;
       justify-content: center;
@@ -190,35 +182,3 @@ select.form-field {
       background-color: #00c874;
       transform: scale(1.02);
     }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <header class="header">
-      <!-- Стрілка назад -->
-      <img src="images/Arrow/ArrowLeft2-192x192.png" alt="back" class="arrow-icon" onclick="window.location.href='Сайт. Поремчук.html'">
-      <h1>Payment</h1>
-    </header>
-
-    <div class="payment-box">
-      <button class="applepay">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple logo">
-      <span>Pay</span>
-      </button>
-
-      <div class="divider">or pay with card</div>
-
-      <input type="email" class="form-field" placeholder="Email">
-
-      <select class="form-field">
-        <option>💳 Mastercard **** 8577 (10/29)</option>
-        <option>💳 Visa **** 1350 (04/27)</option>
-      </select>
-
-      <div class="add-card">+ Add another card</div>
-
-      <button class="pay-btn">Pay $2649.60</button>
-    </div>
-  </div>
-</body>
-</html>
