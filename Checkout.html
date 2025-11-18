@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment</title>
+
+  <!-- Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body { font-family: 'Montserrat', sans-serif; }
+  </style>
+</head>
+<body class="m-0 flex justify-center bg-[#f0f0f0]">
+  <div class="w-full bg-white min-h-screen flex flex-col items-center pb-10">
+
+    <!-- HEADER -->
+    <header class="relative w-full flex items-center justify-center py-2">
+      <img src="images/Arrow/ArrowLeft2-192x192.png"
+           onclick="window.location.href='Кошик.html'"
+           class="absolute left-5 w-[30px] h-[25px] p-[6px] rounded-full cursor-pointer transition
+                  hover:bg-[#E6E6E6] hover:scale-[1.05]">
+
+      <h1 class="text-[18px] font-semibold text-[#210F33] m-0">Payment</h1>
+    </header>
+
+    <!-- PAYMENT BOX -->
+    <div class="w-full bg-[#FAFAFA] rounded-[15px] px-6 pt-5 pb-6 shadow-md mt-6 flex flex-col gap-[14px] box-border">
+
+      <!-- APPLE PAY BUTTON -->
+      <button
+        class="w-full h-[50px] bg-black text-white rounded-lg text-[15px] font-bold
+               flex justify-center items-center gap-2 transition hover:bg-[#1a1a1a] hover:scale-[1.02]">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg"
+             class="w-5 h-5 invert">
+        <span>Pay</span>
+      </button>
+
+      <div class="text-center text-[12px] text-[#9C9C9F] my-2">or pay with card</div>
+
+      <!-- EMAIL -->
+      <input type="email"
+             placeholder="Email"
+             class="w-full h-[45px] border-2 border-[#E6E6E6] rounded-lg px-3 text-[13px] font-semibold
+                    text-[#210F33] outline-none bg-white">
+
+      <!-- CARD SELECT -->
+      <select
+        class="w-full h-[45px] border-2 border-[#E6E6E6] rounded-lg px-3 text-[13px] font-semibold
+               text-[#210F33] outline-none bg-white appearance-none pr-9
+               bg-[url(\"data:image/svg+xml;utf8,<svg fill='%23210F33' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>\")]
+               bg-no-repeat bg-[center_right_10px] bg-[length:12px]">
+        <option>💳 Mastercard **** 8577 (10/29)</option>
+        <option>💳 Visa **** 1350 (04/27)</option>
+      </select>
+
+      <div class="text-[12px] text-[#00DE81] cursor-pointer">+ Add another card</div>
+
+      <!-- PAY BUTTON -->
+      <button
+        class="w-full h-[55px] bg-[#00DE81] text-white rounded-[10px] text-[16px] font-bold
+               transition hover:bg-[#00c874] hover:scale-[1.02]">
+        Pay $2649.60
+      </button>
+
+    </div>
+  </div>
+
+</body>
