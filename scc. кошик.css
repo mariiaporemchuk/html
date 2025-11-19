@@ -34,7 +34,8 @@
     .bag-icon {
       width: 21px;
       height: 18px;
-      left: -10px;
+      left: -4px;      
+      z-index: 1;
     }
     .header img {
   transition: background 0.2s ease, transform 0.1s ease;
@@ -51,13 +52,15 @@
     .cart-icon {
       display: flex;
       align-items: center;
-      gap: 3px;
+      gap: -4px;
+      position: relative;
     }
 
     .badge {
   position: static;
   top: -5px;
-  right: -7px;       
+  right: -7px; 
+  z-index: 3;      
   display: flex;
   justify-content: center;
   align-items: center;
@@ -106,6 +109,8 @@
       gap: 0px;
       width: 100px;
       margin-top: -10px;
+      margin-right: auto;
+      padding-left: 15px;
     }
 
     .item-info h2 {
